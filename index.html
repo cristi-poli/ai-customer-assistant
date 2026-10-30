@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AI Customer Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>AI Customer Assistant</h1>
+
+    <label>Customer name:</label>
+    <br>
+    <input type="text" id="customerName">
+
+    <br><br>
+
+    <label>Issue:</label>
+    <br>
+    <input type="text" id="customerIssue">
+
+    <br><br>
+
+    <label>Sentiment:</label>
+    <br>
+
+    <select id="customerSentiment">
+        <option value="angry">Angry</option>
+        <option value="neutral">Neutral</option>
+        <option value="happy">Happy</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="analyzeCustomer()">Analyze Customer</button>
+
+   <div id="result">
+    <h2>Result</h2>
+
+    <p id="resultCustomer"></p>
+    <p id="resultIssue"></p>
+    <p id="resultSentiment"></p>
+    <p id="resultPriority"></p>
+    <p id="resultAction"></p>
+</div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
